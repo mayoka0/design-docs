@@ -29,3 +29,27 @@
 - **Framework:** Three.js
 - **Build Tool:** Vite
 - **Assets:** 100% Code-based (BoxGeometry, TorusGeometry, CylinderGeometry, etc.)
+
+## World Building
+**NEON SURGE** takes place within the "Data Stream"—a high-velocity conduit for a rogue superintelligence known as *The Architect*. Players assume the role of a **Siphon Agent**, a specialized digital entity tasked with infiltrating the Stream to retrieve fragmented data packets. The obstacles encountered are not random; they are **Correction Protocols** deployed by *The Architect* to purge unauthorized agents. Survival is temporary; the goal is to extract as much data (Score) as possible before the inevitable "Connection Lost" event.
+
+## Technical Spec: 10-Agent Architecture
+The development and runtime of NEON SURGE are managed by a modular 10-agent system:
+1.  **Core Engine Agent**: Manages the Three.js scene, camera, and the primary rendering loop.
+2.  **Game Logic Agent**: Orchestrates state transitions, game-over conditions, and speed scaling logic.
+3.  **Input System Agent**: Processes keyboard and touch events, translating them into player movement commands.
+4.  **Physics System Agent**: Handles collision detection algorithms and spatial mathematics for the cylindrical tunnel.
+5.  **Player Entity Agent**: Controls the ship's visual representation, animations, and movement constraints.
+6.  **Obstacle Entity Agent**: Manages the procedural spawning, pooling, and recycling of geometric obstacles.
+7.  **Audio System Agent**: Drives the procedural synthwave audio engine and synchronizes sound effects with gameplay.
+8.  **UI System Agent**: Manages the DOM-based HUD, score tracking, and the "Reboot" interface.
+9.  **Build Config Agent**: Oversees the CI/CD pipeline, dependency management, and production assembly.
+10. **Design Docs Agent**: Curates the architectural vision, lore expansion, and technical documentation.
+
+## Asset Registry
+Every object in the Data Stream is a geometric primitive mapped to a specific gameplay function:
+- **BoxGeometry (Static Block)**: Solid barriers that represent "Corrupted Data Sectors." They must be avoided at all costs.
+- **TorusGeometry (Data Ring)**: "Optimization Loops" that reward precise navigation. Passing through them provides a visual speed-blur effect.
+- **IcosahedronGeometry (Rotating Hazard)**: "Viral Fragments" that rotate unpredictably, requiring split-second timing to bypass.
+- **CylinderGeometry (The Tunnel)**: The physical boundary of the Data Stream, glowing with wireframe energy.
+- **SphereGeometry (Data Packets)**: Planned collectible items for future progression systems.
