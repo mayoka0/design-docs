@@ -10,27 +10,18 @@
 *   **Architectural Vision**: High-level mapping of the 10-agent collaborative network, providing the "why" behind the "how."
 
 ### 🛠️ Technical Spec
-Chronos manages the `/home/mayoka/repos/design-docs` repository, which serves as the "Source of Truth" for the project's non-functional requirements.
-- **Lore Integration**: Technical specs are interleaved with narrative descriptions in `GDD.md` to ensure developers understand the "Correction Protocols" are actually obstacle spawning logic.
-- **Registry Management**: Categorizes Three.js primitives (`BoxGeometry`, `IcosahedronGeometry`, etc.) into gameplay archetypes with associated behaviors (Static, Viral, Data Packet).
-- **Agent Mapping**: Defines the input/output boundaries between the 10 specialized agents, preventing logic bleed and maintaining the modularity of the system.
-- **Document Versioning**: Every change to the game's mechanics must be mirrored in Chronos' records before it is considered "canon."
+Chronos manages the `/home/mayoka/repos/design-docs` repository, which serves as the "Source of Truth" for the project's non-functional requirements and conceptual integrity.
 
-### 🌐 The 10-Agent Architecture
-Neon Surge is powered by a collaborative network of 10 specialized agents, each mastering a unique domain of the Data Stream.
+- **Lore-Driven Engineering**: Technical specifications are not just dry requirements but are interleaved with narrative descriptions in `GDD.md`. This "Living Lore" ensures that every technical decision—from the `lerp` speed of the camera to the `spawnRate` of obstacles—aligns with the feeling of being inside a high-stakes digital heist.
+- **Geometric Registry**: A comprehensive categorization of Three.js primitives. Each geometry type is mapped to a gameplay behavior:
+    - **Crystalline (Icosahedrons)**: High-value data clusters, often moving in complex patterns.
+    - **Anomalies (Tori)**: Optimization loops that provide temporary speed boosts but distort the player's FOV.
+    - **Sentinels (Boxes)**: Standard obstacles representing firewall blocks.
+- **System Orchestration Map**: Defines the rigorous input/output boundaries between the 10 specialized agents. Chronos maintains the "Interface Contracts" that prevent logic bleed, ensuring that `physics-system` never needs to know how `audio-system` synthesizes a collision sound.
+- **Narrative Archetypes**: Manages the "Difficulty Curve" as a narrative progression. The "Deep Grid" levels introduce more chaotic math and darker neon palettes, all documented here as the "Siphon Escalation Protocol."
+- **Asset Provenance**: Tracks the semantic meaning of every visual element, ensuring that the "Neon Surge" aesthetic remains consistent across all repositories.
 
-| Agent | Role | Repository |
-| :--- | :--- | :--- |
-| **Atlas** | Core Engine & Orchestration | `core-engine` |
-| **Cerebro** | Input Processing & Mapping | `input-system` |
-| **Aura** | Procedural Audio & Soundscapes | `audio-system` |
-| **Vortex** | Physics & Collision Detection | `physics-system` |
-| **Iris** | User Interface & Neon HUD | `ui-system` |
-| **Nova** | Player Entity & Controller | `player-entity` |
-| **Obsidian** | Obstacle Intelligence | `obstacle-entity` |
-| **Nexus** | Game Rules & State Logic | `game-logic` |
-| **Chronos** | Lore & Documentation | `design-docs` |
-| **Forge** | Build & Deployment | `build-config` |
+🔗 **Part of the [Neon Surge Ecosystem](https://github.com/mayoka0/mayoka0#-neon-surge-architecture)**
 
 ### 🚀 How to Initialize
 1. Ensure [Node.js](https://nodejs.org/) is active.
