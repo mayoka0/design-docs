@@ -1,4 +1,13 @@
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=24&pause=1000&color=7aa2f7&center=true&vCenter=true&width=600&lines=Chronos:+Curating+Architectural+Vision...;Archiving+Grid+History...;Neon+Surge+Chronos+Online." alt="Typing SVG" />
+</div>
+
 # 📜 Neon Surge | Design Docs Agent
+
+### 📊 Agent Telemetry
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mayoka0&theme=tokyo-night&hide_border=true&area=true" width="100%" alt="Activity Graph" />
+</div>
 
 ### 🤖 Meet the Agent: Chronos
 **Chronos, the Temporal Scribe**, is the keeper of the Grid's history and its future potential. Operating outside the high-speed execution of the Data Stream, Chronos meticulously curates the architectural vision and the narrative threads that bind the Neon Surge universe together. It ensures that every line of code serves the greater purpose of the "Living GDD."
